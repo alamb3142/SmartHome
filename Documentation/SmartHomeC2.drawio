@@ -1,0 +1,109 @@
+<mxfile host="www.draw.io" modified="2023-04-12T19:36:11.062Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/111.0" etag="-Xo3AMmUbXLr61w2vfpV" version="21.1.7" type="device">
+  <diagram name="Page-1" id="UWBYpELQQd2pUtkp6Bw4">
+    <mxGraphModel dx="802" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QMQL_o8IYr1M-K92ZShB-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="120" y="170" width="560" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="QMQL_o8IYr1M-K92ZShB-13" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;User&lt;br&gt;&lt;/div&gt;" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="330" y="10" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QMQL_o8IYr1M-K92ZShB-15" value="&lt;b&gt;Smart Home System&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="170" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QMQL_o8IYr1M-K92ZShB-16" value="&lt;div&gt;&lt;b&gt;Management Portal&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;(Single Page Application)&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Angular app for monitoring &amp;amp; management&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="160" y="200" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QMQL_o8IYr1M-K92ZShB-17" value="&lt;div&gt;&lt;b&gt;Android App&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Mobile app based on SPA, also handles push notifications&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="440" y="200" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QMQL_o8IYr1M-K92ZShB-19" value="&lt;div&gt;&lt;b&gt;API Application&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Central management for the entire system, HTTP API + event bus&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="260" y="370" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.017;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QMQL_o8IYr1M-K92ZShB-13" target="QMQL_o8IYr1M-K92ZShB-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-2" value="&lt;div&gt;Acess system&lt;/div&gt;&lt;div&gt;via web app&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8bifnRvNS3MunyULTGTN-1">
+          <mxGeometry x="-0.316" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.983;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QMQL_o8IYr1M-K92ZShB-13" target="QMQL_o8IYr1M-K92ZShB-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+            <mxPoint x="440" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-4" value="&lt;div&gt;Access system &lt;br&gt;&lt;/div&gt;&lt;div&gt;via mobile app&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8bifnRvNS3MunyULTGTN-3">
+          <mxGeometry x="-0.3075" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QMQL_o8IYr1M-K92ZShB-16" target="QMQL_o8IYr1M-K92ZShB-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="440" as="sourcePoint" />
+            <mxPoint x="440" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-15" value="HTTP &amp;amp; SignalR" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8bifnRvNS3MunyULTGTN-5">
+          <mxGeometry x="-0.2568" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QMQL_o8IYr1M-K92ZShB-17" target="QMQL_o8IYr1M-K92ZShB-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="400" as="sourcePoint" />
+            <mxPoint x="440" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-16" value="HTTP Calls" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8bifnRvNS3MunyULTGTN-6">
+          <mxGeometry x="-0.1922" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-7" value="&lt;div&gt;&lt;b&gt;Database&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;SQL Server&lt;/div&gt;&lt;div&gt;/EF Core&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="140" y="540" width="90" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-9" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.09;entryY=0.984;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8bifnRvNS3MunyULTGTN-7" target="QMQL_o8IYr1M-K92ZShB-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="585" as="sourcePoint" />
+            <mxPoint x="360" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-10" value="&lt;div&gt;Stores &amp;amp; retrieves&lt;/div&gt;&lt;div&gt;data&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8bifnRvNS3MunyULTGTN-9">
+          <mxGeometry x="0.1656" y="-4" relative="1" as="geometry">
+            <mxPoint y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="450" y="530" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="460" y="540" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-14" value="&lt;div&gt;&lt;b&gt;Smart Devices&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Individual applications per device type. Measuring devices push data, state control devices poll API for changes&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="470" y="550" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0.549;exitY=-0.001;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8bifnRvNS3MunyULTGTN-12" target="QMQL_o8IYr1M-K92ZShB-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="530" as="sourcePoint" />
+            <mxPoint x="380" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-18" value="&lt;div&gt;Makes HTTP&lt;/div&gt;&lt;div&gt;calls&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8bifnRvNS3MunyULTGTN-17">
+          <mxGeometry x="0.2856" y="4" relative="1" as="geometry">
+            <mxPoint x="17" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bifnRvNS3MunyULTGTN-19" value="&lt;div align=&quot;left&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;SmartHome C2 Diagram&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;(Containers)&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" width="200" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
