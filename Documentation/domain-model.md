@@ -1,5 +1,7 @@
 # Domain Model - Breakdown
 
+[back to README.md](../README.md)
+
 ## Intro
 
 The main breakdown of the domain will be by functionality. This gives us a domain driven system with the main benefit of vertical slice architecture: isolating code by capability.
@@ -13,3 +15,7 @@ A `Switch` is a device that controls the state of some physical device. In it's 
 ## CCTV
 
 A `Camera` will stream video. Domain logic here will largely be informed by implementation details, so this section will be further refined when more research has been carried out.
+
+## Conceptual Model
+
+TODO: Domain conceptual model diagram
