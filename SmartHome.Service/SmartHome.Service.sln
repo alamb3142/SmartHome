@@ -5,15 +5,15 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHome.Service.API", "SmartHome.Service.API\SmartHome.Service.API.csproj", "{A0672BFA-A354-45CF-B86F-4B4493893C2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchables.Application", "Modules\Switchables\Switchables.Application\Switchables.Application.csproj", "{6238562E-3160-4369-A7BC-01EC37E04EB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switchables.Application", "Modules\Switchables\Switchables.Application\Switchables.Application.csproj", "{6238562E-3160-4369-A7BC-01EC37E04EB3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{229B88AD-49FD-4C5D-A8EB-87551C479A40}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartHome.Service.Modules", "SmartHome.Service.Modules", "{229B88AD-49FD-4C5D-A8EB-87551C479A40}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Switchables", "Switchables", "{274C50B9-2564-4EC3-913F-7FC97EC1DA6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchables.Domain", "Modules\Switchables\Switchables.Domain\Switchables.Domain.csproj", "{7E898236-1015-4212-8082-1729F6D0417B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switchables.Domain", "Modules\Switchables\Switchables.Domain\Switchables.Domain.csproj", "{7E898236-1015-4212-8082-1729F6D0417B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchables.Infrastructure", "Modules\Switchables\Switchables.Infrastructure\Switchables.Infrastructure.csproj", "{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switchables.Infrastructure", "Modules\Switchables\Switchables.Infrastructure\Switchables.Infrastructure.csproj", "{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
