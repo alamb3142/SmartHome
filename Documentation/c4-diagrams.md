@@ -8,7 +8,7 @@
 
 ## C3 (Component)
 
-TODO
+![C3 Diagram](./Diagrams/SmartHomeC3.drawio.png)
 
 ## C4 (Class):
 
