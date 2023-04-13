@@ -1,0 +1,145 @@
+<mxfile host="Electron" modified="2023-04-13T11:29:05.624Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="nLrSOaM4UNSrVNzRDzva" version="21.1.2" type="device">
+  <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
+    <mxGraphModel dx="1430" dy="837" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="17acba5748e5396b-1" value="LAN" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="15" y="10" width="775" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="fsOysLUVeMhz4NzR2b4v-13" target="fsOysLUVeMhz4NzR2b4v-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="400" />
+              <mxPoint x="510" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-25" value="HTTP calls from SPA to API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fsOysLUVeMhz4NzR2b4v-22">
+          <mxGeometry x="0.1364" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-32" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="170" y="80" width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-32">
+          <mxGeometry width="200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-10" value="&lt;b&gt;User&lt;/b&gt;&lt;br&gt;&lt;br&gt;Accesses system via web app and/or&lt;br&gt;mobile app" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-32">
+          <mxGeometry x="80" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-14" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Laptop.svg;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-32">
+          <mxGeometry x="10" y="150" width="59.15" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-15" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-32">
+          <mxGeometry x="80" y="148.2" width="45.6" height="61.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-16" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Tablet.svg;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-32">
+          <mxGeometry x="150" y="144.5" width="33.63" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-33" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="60" y="460" width="600" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-18" value="SmartHome Hub" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-33">
+          <mxGeometry width="600" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startArrow=classic;startFill=1;" edge="1" parent="fsOysLUVeMhz4NzR2b4v-18" source="fsOysLUVeMhz4NzR2b4v-21" target="fsOysLUVeMhz4NzR2b4v-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="80" />
+              <mxPoint x="391" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="fsOysLUVeMhz4NzR2b4v-18" source="fsOysLUVeMhz4NzR2b4v-21" target="fsOysLUVeMhz4NzR2b4v-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-21" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-18">
+          <mxGeometry x="443.48" y="-30" width="68.63" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="fsOysLUVeMhz4NzR2b4v-18" source="fsOysLUVeMhz4NzR2b4v-23" target="fsOysLUVeMhz4NzR2b4v-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="150" />
+              <mxPoint x="300" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-57" value="API sends and&lt;br&gt;receives data&lt;br&gt;from IOT bus" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fsOysLUVeMhz4NzR2b4v-55">
+          <mxGeometry x="-0.2009" y="-3" relative="1" as="geometry">
+            <mxPoint x="11" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-23" value="&lt;b&gt;SmartHome.Service&lt;/b&gt;&lt;br&gt;&lt;br&gt;.NET API with in-process event buses for domain &amp;amp; integration events" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-18">
+          <mxGeometry x="13.434782608695649" y="96" width="182.6086956521739" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-29" value="&lt;b&gt;IOT Event Bus&lt;/b&gt;&lt;br&gt;&lt;br&gt;Out of process event bus for communication between API &amp;amp; IOT devices" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-18">
+          <mxGeometry x="220.29642857142858" y="191" width="197.56071428571425" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="fsOysLUVeMhz4NzR2b4v-18" source="fsOysLUVeMhz4NzR2b4v-21" target="fsOysLUVeMhz4NzR2b4v-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="117.78260869565217" y="36" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-26" value="User HTTP calls" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fsOysLUVeMhz4NzR2b4v-24">
+          <mxGeometry x="0.6906" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-61" value="&lt;b&gt;SPA/Mobile&lt;/b&gt;&lt;br&gt;&lt;br&gt;SPA app served to desktops. Wrapped in Tauri for mobile and served via app stores" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-18">
+          <mxGeometry x="460" y="120" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-27" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-33">
+          <mxGeometry x="65.21739130434783" y="210" width="78.26086956521739" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="fsOysLUVeMhz4NzR2b4v-33" source="fsOysLUVeMhz4NzR2b4v-23" target="fsOysLUVeMhz4NzR2b4v-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-44" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="560" y="110" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-37" value="&lt;b&gt;Embedded Program&lt;/b&gt;&lt;br&gt;&lt;br&gt;Rust or C program handling communication to hub via MQTT as well as connections to peripherals (sensors, relays, etc)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-44">
+          <mxGeometry y="20" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-36" value="Smart Device" style="swimlane;whiteSpace=wrap;html=1;fillStyle=solid;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-44">
+          <mxGeometry width="200" height="200" as="geometry">
+            <mxRectangle width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-35" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" vertex="1" parent="fsOysLUVeMhz4NzR2b4v-36">
+          <mxGeometry x="146.52730292077757" y="-26" width="53.47269707922243" height="67.7737618442903" as="geometry" />
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;startArrow=classic;startFill=1;" edge="1" parent="1" source="fsOysLUVeMhz4NzR2b4v-21" target="fsOysLUVeMhz4NzR2b4v-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-53" value="Bidirectional communication&lt;br&gt;via Iot Event Bus" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fsOysLUVeMhz4NzR2b4v-52">
+          <mxGeometry x="-0.1994" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-58" value="" style="endArrow=classic;startArrow=none;html=1;rounded=0;entryX=0.004;entryY=0.28;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;exitX=0.39;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;startFill=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="fsOysLUVeMhz4NzR2b4v-13" target="fsOysLUVeMhz4NzR2b4v-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="410" as="sourcePoint" />
+            <mxPoint x="240" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="248" y="420" />
+              <mxPoint x="504" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fsOysLUVeMhz4NzR2b4v-59" value="Serves SPA&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fsOysLUVeMhz4NzR2b4v-58">
+          <mxGeometry x="0.0551" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
