@@ -30,6 +30,8 @@ In phase 2 we plan to move a lot of the infrastructure into the cloud to allow u
 
 Here we move the SPA and the backend into Azure AppService instances, which gives us the flexibility to scale horizontally with Azure's autoscaling & loadbalancing, or even move to something like a managed Kubernetes cluster for added scalability.
 
+TODO: clean up bidirectional arrows that don't actually represent bidirectional network connections
+
 ## Security
 
 The security of the system is in need of further refinement and will be added to the above diagram when this happens.
