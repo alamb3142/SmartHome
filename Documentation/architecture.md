@@ -14,33 +14,13 @@ The entire system is hosted on LAN on a user's WiFi network. A central hub, init
 
 Expanding on these components:
 
-## SmartHome Hub
-
-A lightweight hub system, most likely a Raspberry Pi running Ubuntu. Network config TBD but will likely use NGINX to serve the Angular SPA & proxy requests to SmartHome.Service under the same host/url
-
-## SmartHome.Service
-
-Kestrel/ASP hosted .NET Core API. Self Contained deployment requiring minimal deployment server configuration, allowing for easier migration to an Azure WebApp for future phases. Initially will support our custom IoT devices with communication via some out-of-process event bus, but later implementation details may change as I understand and implement the [Matter Standard](https://github.com/project-chip/connectedhomeip).
-
-## Angular SPA
-
-Angular application for web based access to the system. Will allow a user to use & control all configured smart devices in the home via the SmartHome.Service API.
-
-## Mobile App
-
-Tauri (similar to Electron) to bundle up the SPA & allow use as a mobile app. This will hopefully allow the addition of push notifications when we start to add doorbells & security systems that want to alert a user. If this proves difficult with this setup we will move towards a mobile app written in .NET MAURI.
-
-## Smart Device
-
-The IoT devices initially will be custom programmed ESP32 devices because that's what I have lying around. These devices will be supported or replaced by [Matter Standard](https://github.com/project-chip/connectedhomeip) devices as the standard matures and these become more readily available.
-
-## IoT Event Bus
-
-Bidirectional communication acheived between devices and the API via an event bus/message queue server, likely RabbitMQ.
-
-## Databases
-
-In this phase we will adopt SQLite databases, one per module/subdomain, for simplicity. SQLite is being chosen for the MVP because it's lightweight and easy to set up without consuming to many resources on the hub, and because we will likely move to a cloud based database like CosmosDB in future stages as we move to a serverless architecture.
+| Component         | Description                                                                                                                                                                                                 |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SmartHome Hub     | Linux based hub system, SmartHome.Service as Kestrel server, with NGINX to serve SPA & proxy /api urls to backend. This machine will also host the event bus(es) for integration events & IoT communication |
+| SmartHome.Service | .NET Web API & libraries. Exposes REST API for user interaction, subscribes & publishes to the event bus for communication between smart devices                                                            |
+| SPA/Mobile        | Angular SPA app, initially bundled up as mobile app using Tauri, may eventually be split out to a Xamarin/MAURI for mobile                                                                                  |
+| Smart Device      | ESP32 based devices connected to LAN, communicating via the IoT Event Bus                                                                                                                                   |
+| Databases         | Database per SmartHome.Service subdomain, exact technologies chosen based on what the subdomain requires (e.g. cameras need a much more sophisticated data store than light switches)                       |
 
 # Phase 2
 
@@ -57,3 +37,7 @@ The security of the system is in need of further refinement and will be added to
 Since we're targetting Azure as our cloud provider it's more than likely that authentication will be handled via some Azure identity system, using the OpenID Connect specification to provide the client (the SPA) with ID tokens and an access token for API access.
 
 Authorization will be part of our domain model and as such included as the UserAccess module/subdomain for SmartHome.Service. Depending on the outcome of further investigation & refinement of these systems the UserAccess module will work alongside, or wrap around the identity provider & allow all important user claims to be bundled in together with ID & access tokens or inside the /userinfo endpoint.
+
+# Phase 3
+
+Phase 3 will build on foundations laid in the previous phase, moving to a multi-tenanted system with a focus on security, scalability and observability.
