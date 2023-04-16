@@ -33,4 +33,6 @@ NB: The data stores, event bus & smart devices potentially belong outside the Sm
 
 ## C4 (Class):
 
-TODO: Class diagram per aggregate root, lower definition class diagrams to show how aggregate roots within a module interact with each other & between modules.
+![C4 Diagram](./Diagrams/SmartHomeC4.png)
+
+(Work in progress)
