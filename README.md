@@ -9,3 +9,4 @@ A Smart Home system focusing on privacy and security. This project mainly serves
 - [Architecture](./Documentation/architecture.md)
 - [Context Diagrams](./Documentation/c4-diagrams.md)
 - [Domain Model/Ubiquitous Language](./Documentation/domain-model.md)
+- [SPA Design](./Documentation/spa-design.md)
