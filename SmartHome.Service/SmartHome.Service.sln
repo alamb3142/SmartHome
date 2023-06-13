@@ -3,19 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHome.Service.API", "SmartHome.Service.API\SmartHome.Service.API.csproj", "{A0672BFA-A354-45CF-B86F-4B4493893C2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5922F843-F293-4FA6-BE12-C54E29799815}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switchables.Application", "Modules\Switchables\Switchables.Application\Switchables.Application.csproj", "{6238562E-3160-4369-A7BC-01EC37E04EB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{9E591F13-E4FD-4A92-9766-F71E7B1C06BA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartHome.Service.Modules", "SmartHome.Service.Modules", "{229B88AD-49FD-4C5D-A8EB-87551C479A40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{72E28BB2-AB85-427E-96CF-567D07281E6F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Switchables", "Switchables", "{274C50B9-2564-4EC3-913F-7FC97EC1DA6D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{B527B9E2-D974-4A6C-946F-3AB0D1E875ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switchables.Domain", "Modules\Switchables\Switchables.Domain\Switchables.Domain.csproj", "{7E898236-1015-4212-8082-1729F6D0417B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switchables.Infrastructure", "Modules\Switchables\Switchables.Infrastructure\Switchables.Infrastructure.csproj", "{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Service.BuildingBlocks", "SmartHome.Service.BuildingBlocks\SmartHome.Service.BuildingBlocks.csproj", "{6AD81B19-9A54-4FB5-9525-4E42CAAD27A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "Testing\Domain.UnitTests\Domain.UnitTests.csproj", "{E106896B-7F1B-4F54-AD1A-AC926BC2DFAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,37 +19,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A0672BFA-A354-45CF-B86F-4B4493893C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A0672BFA-A354-45CF-B86F-4B4493893C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A0672BFA-A354-45CF-B86F-4B4493893C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A0672BFA-A354-45CF-B86F-4B4493893C2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6238562E-3160-4369-A7BC-01EC37E04EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6238562E-3160-4369-A7BC-01EC37E04EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6238562E-3160-4369-A7BC-01EC37E04EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6238562E-3160-4369-A7BC-01EC37E04EB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E898236-1015-4212-8082-1729F6D0417B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E898236-1015-4212-8082-1729F6D0417B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E898236-1015-4212-8082-1729F6D0417B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E898236-1015-4212-8082-1729F6D0417B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AD81B19-9A54-4FB5-9525-4E42CAAD27A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AD81B19-9A54-4FB5-9525-4E42CAAD27A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AD81B19-9A54-4FB5-9525-4E42CAAD27A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AD81B19-9A54-4FB5-9525-4E42CAAD27A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5922F843-F293-4FA6-BE12-C54E29799815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5922F843-F293-4FA6-BE12-C54E29799815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5922F843-F293-4FA6-BE12-C54E29799815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5922F843-F293-4FA6-BE12-C54E29799815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E591F13-E4FD-4A92-9766-F71E7B1C06BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E591F13-E4FD-4A92-9766-F71E7B1C06BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E591F13-E4FD-4A92-9766-F71E7B1C06BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E591F13-E4FD-4A92-9766-F71E7B1C06BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E28BB2-AB85-427E-96CF-567D07281E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E28BB2-AB85-427E-96CF-567D07281E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E28BB2-AB85-427E-96CF-567D07281E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E28BB2-AB85-427E-96CF-567D07281E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E106896B-7F1B-4F54-AD1A-AC926BC2DFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E106896B-7F1B-4F54-AD1A-AC926BC2DFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E106896B-7F1B-4F54-AD1A-AC926BC2DFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E106896B-7F1B-4F54-AD1A-AC926BC2DFAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{6238562E-3160-4369-A7BC-01EC37E04EB3} = {274C50B9-2564-4EC3-913F-7FC97EC1DA6D}
-		{274C50B9-2564-4EC3-913F-7FC97EC1DA6D} = {229B88AD-49FD-4C5D-A8EB-87551C479A40}
-		{7E898236-1015-4212-8082-1729F6D0417B} = {274C50B9-2564-4EC3-913F-7FC97EC1DA6D}
-		{31F8E6CF-D34E-4F2C-BE12-24DD4B672FF2} = {274C50B9-2564-4EC3-913F-7FC97EC1DA6D}
-	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64BE4714-4BBD-4808-B378-0CFF5302AC6B}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E106896B-7F1B-4F54-AD1A-AC926BC2DFAD} = {B527B9E2-D974-4A6C-946F-3AB0D1E875ED}
 	EndGlobalSection
 EndGlobal
