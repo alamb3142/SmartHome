@@ -18,6 +18,7 @@ public class DoorLock : IAggregateRoot, IDeviceFunction
 
     public static DoorLock Create(Device device, bool locked)
     {
+        // do we really need this as a rule?
         if (device.State != DeviceState.Connected)
         {
             throw new Exception("Device must be available and charged");
