@@ -1,8 +1,9 @@
+using Domain.Common;
+
 namespace Domain.Devices;
 
-public class Device // todo: entity
+public class Device : Entity, IAggregateRoot
 {
-    public Guid Id { get; protected set; }
     public string NodeId { get; protected set; } //? value object?
     public bool On { get; protected set; }
     public DeviceState State { get; protected set; }
