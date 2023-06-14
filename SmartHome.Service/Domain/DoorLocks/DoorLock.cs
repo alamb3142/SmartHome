@@ -3,9 +3,8 @@ using Domain.Devices;
 
 namespace Domain.Doorlocks;
 
-public class DoorLock : IAggregateRoot, IDeviceFunction
+public class DoorLock : Entity, IAggregateRoot, IDeviceFunction
 {
-    public Guid Id { get; protected set; }
     public Guid DeviceId { get; protected set; }
     public bool Locked { get; protected set; }
 
