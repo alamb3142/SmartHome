@@ -1,4 +1,4 @@
-namespace Domain.Devices;
+namespace Domain.Common;
 
 public enum DeviceState
 {

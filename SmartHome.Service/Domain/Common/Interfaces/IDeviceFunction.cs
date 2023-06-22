@@ -1,6 +1,7 @@
 namespace Domain.Common;
 
-public interface IDeviceFunction
+public interface IDevice
 {
-    public Guid DeviceId { get; }
+    public Guid Id { get; }
+    public DeviceState State { get; }
 }

@@ -9,6 +9,7 @@ public class DoorLockTests
     private Device _activeDevice;
 
     [SetUp]
+
     public void Setup()
     {
         _activeDevice = Device.Create("1234", true, DeviceState.Connected);
