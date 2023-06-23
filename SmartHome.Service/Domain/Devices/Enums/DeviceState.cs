@@ -1,6 +1,6 @@
-namespace Domain.Common;
+namespace Domain.Devices;
 
-public enum DeviceState
+public enum ConnectionState
 {
     Connected,
     LowBattery,

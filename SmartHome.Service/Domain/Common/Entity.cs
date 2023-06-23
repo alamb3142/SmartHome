@@ -7,9 +7,9 @@ namespace Domain.Common;
 public abstract class Entity
 {
     int? _requestedHashCode;
-    Guid _Id;
+    int _Id;
     private List<INotification> _domainEvents;
-    public virtual Guid Id
+    public virtual int Id
     {
         get
         {
@@ -24,7 +24,7 @@ public abstract class Entity
     public List<INotification> DomainEvents => _domainEvents;
     public void AddDomainEvent(INotification eventItem)
     {
-        _domainEvents = _domainEvents ?? new List<INotification>();
+        _domainEvents ??= new List<INotification>();
         _domainEvents.Add(eventItem);
     }
     public void RemoveDomainEvent(INotification eventItem)
@@ -35,22 +35,22 @@ public abstract class Entity
 
     public bool IsTransient()
     {
-        return this.Id == default(Guid);
+        return this.Id == default;
     }
 
     public override bool Equals(object obj)
     {
-        if (obj == null || !(obj is Entity))
+        if (obj == null || obj is not Entity)
             return false;
-        if (Object.ReferenceEquals(this, obj))
+        if (ReferenceEquals(this, obj))
             return true;
-        if (this.GetType() != obj.GetType())
+        if (GetType() != obj.GetType())
             return false;
         Entity item = (Entity)obj;
-        if (item.IsTransient() || this.IsTransient())
+        if (item.IsTransient() || IsTransient())
             return false;
         else
-            return item.Id == this.Id;
+            return item.Id == Id;
     }
 
     public override int GetHashCode()
@@ -68,8 +68,8 @@ public abstract class Entity
     }
     public static bool operator ==(Entity left, Entity right)
     {
-        if (Object.Equals(left, null))
-            return (Object.Equals(right, null));
+        if (Equals(left, null))
+            return Equals(right, null);
         else
             return left.Equals(right);
     }
