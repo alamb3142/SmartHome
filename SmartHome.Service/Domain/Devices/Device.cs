@@ -26,7 +26,15 @@ public class Device : Entity, IAggregateRoot
     {
         var state = new DeviceStatus(ConnectionState.Unkown, DateTime.UtcNow);
         var controls = new List<int>();
-        return new Device(0, name, state, controls);
+        return new Device(default, name, state, controls);
+    }
+
+    // Temporary
+    public static Device Create(int id, string name)
+    {
+        var state = new DeviceStatus(ConnectionState.Unkown, DateTime.UtcNow);
+        var controls = new List<int>();
+        return new Device(id, name, state, controls);
     }
 
     public void Rename(string name)
