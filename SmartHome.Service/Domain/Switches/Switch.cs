@@ -5,6 +5,7 @@ namespace Domain.Switches;
 public class Switch : Entity, IAggregateRoot, IControl
 {
     public int DeviceId { get; protected set; }
+    public string Name { get; protected set; } = "";
     public SwitchState State { get; protected set; }
 
     protected Switch(int id, int devicedId, SwitchState state)
