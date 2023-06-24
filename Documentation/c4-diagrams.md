@@ -12,6 +12,10 @@ C4 Context diagrams attempt to outline a system at different "zoom" levels. We s
 
 TODO: "Management Portal" -> "SPA", add event bus or update the device -> application connection to imply that events are used here rather than http calls
 
+---
+
+# !Much of this is to be refactored into a backend service with a single module. Following diagrams are out of date
+
 ## C3 (Component)
 
 ![C3 Diagram](./Diagrams/SmartHomeC3.drawio.png)
