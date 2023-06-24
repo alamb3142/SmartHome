@@ -10,6 +10,8 @@ SmartHome users have `Device`s in their home to manage.
 
 Each `Device` has one or `Control`s, for example a basic smart bulb will have `OnOff` controls, while a more advanced model may have `Level` and `Colour` controls.
 
+A `Device` is commissioned onto the network, at which point it's capabilities
+
 ### Controls
 
 A `Switch` is a `Control` that can be turned on or off. Like a `Light`, `Plug` or a `Lock` (locks may become their own control at some point).
