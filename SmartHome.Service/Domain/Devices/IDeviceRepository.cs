@@ -5,6 +5,7 @@ namespace Domain;
 
 public interface IDeviceRepository : IRepository<Device>
 {
+    public int NewId { get; }
     public Task<List<Device>> GetAllAsync(CancellationToken cancellationToken);
     public Task<Device> GetById(int id, CancellationToken cancellationToken);
     public Task<List<Device>> GetById(IEnumerable<int> ids, CancellationToken cancellationToken);
