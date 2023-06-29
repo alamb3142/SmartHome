@@ -1,4 +1,5 @@
 ﻿using Domain.Common;
+using FluentResults;
 
 namespace Domain.Devices;
 
@@ -17,14 +18,12 @@ public class Device : Entity, IAggregateRoot
         Status = deviceStatus;
         _controls = controls.ToList();
 
-        //? So I think we pass it the device, the entity gets saved, ID is updated in the 
-        //? reference, then after saveChanges we get the ID from that reference out of the event?
         AddDomainEvent(new DeviceRegisteredDomainEvent(this));
     }
 
     public static Device Create(string name)
     {
-        var state = new DeviceStatus(ConnectionState.Unkown, DateTime.UtcNow);
+        var state = DeviceStatus.Create();
         var controls = new List<int>();
         return new Device(default, name, state, controls);
     }
@@ -32,7 +31,7 @@ public class Device : Entity, IAggregateRoot
     // Temporary
     public static Device Create(int id, string name)
     {
-        var state = new DeviceStatus(ConnectionState.Unkown, DateTime.UtcNow);
+        var state = DeviceStatus.Create();
         var controls = new List<int>();
         return new Device(id, name, state, controls);
     }
@@ -42,13 +41,18 @@ public class Device : Entity, IAggregateRoot
         Name = name;
     }
 
-    public void SetControls(IEnumerable<int> controls)
+    public Result SetControls(IEnumerable<int> controls)
     {
+        if (_controls.Any())
+            return Result.Fail("Cannot change controls after initial pairing");
+
         _controls = controls.ToList();
+
+        return Result.Ok();
     }
 
     public void UpdateConnectionState(ConnectionState state)
     {
-        Status = new DeviceStatus(state, DateTime.UtcNow);
+        Status = DeviceStatus.Create(state);
     }
 }

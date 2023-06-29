@@ -16,11 +16,6 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapGet("/", () => "Hello World!");
-
-
-
-
 var devices = app.MapGroup("/devices");
 devices.MediatePost<PairDeviceCommand, string>("/pair");
 devices.MediateGet<GetDevicesQuery, List<DeviceDetailsResponse>>("/list");
